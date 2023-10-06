@@ -1,0 +1,136 @@
+
+/*indentions*/
+
+.first-level {
+    padding-left: 100px;
+}
+
+.second-level {
+    padding-left: 180px;
+}
+
+/*editing texts with links*/
+
+a {
+    color: inherit;
+}
+
+/*text modifications*/
+
+h1 {
+    color: #60CAF4;
+    font-family: 'Lobster Two';
+    font-size: 150px;
+    text-align: center;
+}
+
+h1.a {
+    font-family: "Lobster Two";
+}
+        
+h1.b {
+    font-family: "Kaushan Script";
+}
+        
+h1.c {
+    font-family: "Young Serif";
+}
+
+h2 {
+
+    color: #60CAF4;
+    font-family: 'Kaushan Script';
+    font-size: 50px;
+}
+
+h3 {
+    color: #E1A;
+    font-family: 'Lobster Two';
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 1px 1px 0px #FACED5;
+}
+
+h4 {
+    color: #FACED5;
+    font-family: 'Young Serif';
+    font-size: 20px;
+    font-weight: normal;
+}
+
+li {
+    color: #B1F2FF;
+    font-family: 'Young Serif';
+    font-size: 20px;
+}
+
+p {
+    color: #FACED5;
+    font-family: 'Young Serif';
+    font-size: 20px; 
+}
+
+.outlined-text {
+    -webkit-text-stroke: .1px black; /* Black outline */
+}
+
+/*background setup*/
+
+body {
+    background-image: url("../images/barbiehouse.png"); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+body::before { /*To better see the texts in the website*/
+    content: "";
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700%;
+    z-index: -1; /* Place it behind the content */
+}
+
+/*positioning pictures*/
+
+.item {
+    display: flex; 
+    align-items: center; 
+}
+
+/*skill table*/
+
+table, th, td {
+    border:0px solid #fff;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+th, td {
+    text-align: center;
+}
+
+th {
+    color: #E1A;
+    font-family: 'Young Serif';
+    font-size: 25px;
+    text-shadow: 1px 1px 0px #FACED5;
+}
+
+td{
+    color: #B1F2FF;
+    font-family: 'Young Serif';
+    font-size: 20px; 
+}
+
+.highlight-cell {
+    background-color: #F8C1AC;
+}
+
+.bordered-cell {
+    border: 2px solid white; 
+    padding: 5px; 
+}
